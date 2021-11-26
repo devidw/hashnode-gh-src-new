@@ -1,0 +1,35 @@
+## Rough Overview of the Transmission Control Protocol
+ (TCP)
+
+The Transmission Control Protocol (TCP) is used to transfer data across the internet. On top of that, the protocol ensures that the transferred data retrieves the recipient as it was sent. That gives us an extra layer of controlling.
+
+## Opening the connection
+To built up the connection for a working transmission, TCP needs the following information:
+* IP address of the sender 
+* IP address of the recipient 
+* Port of the recipient
+
+## Transmission
+As soon as the connection between sender and recipient is built up successfully and both machines are connected, the transmission of data can start.
+
+Data is transferred in small segments, which are easy and fast to transfer thanks to their small size.
+
+Every time the recipient receives a segment of data, a confirmation is sent to the sender, to confirm the successful transmission.
+
+This way, it can be ensured that no data segment was lost during transmission.
+
+Furthermore, the sender adds an individual validation number to each data segments that gets send. 
+
+When the recipient retrieves the data segments, it's possible for the recipient to use that number to validate whether the received data is valid or not.
+
+In case of an invalid data segment, the recipient can request this specific data segment once again from the sender.
+
+## Closing the connection
+After a successful transmission of all data segments, the connection is closed in a regulated way.
+
+At this point, the job of TCP is done.
+
+---
+
+## Resources
+* [wikipedia.org](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)

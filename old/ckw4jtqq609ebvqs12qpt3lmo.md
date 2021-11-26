@@ -1,0 +1,89 @@
+## Introduction and Overview of the Internet Protocol (IPv4 and IPv6)
+
+**IP-addresses are unique**: As soon as you connect your computer to the internet, your computer gets a unique IP-address assigned, which only your individual computer has. Every other computer in the whole network holds a different address, and your computer is the only one holder this unique internet address.
+
+**IP-addresses can change**: Not like a MAC-address, which is assigned to your computer once and forever (it's written deep onto your network controller), IP-addresses indeed can change over time.
+
+That's the case due to the fact, that IP-address are not linked to a device directly (like Mac-addresses are), rather they are assigned to participants of a network, the internet.
+
+And these participants, like you, can change over time.
+
+For example, you can get an IP-address for a session you use the internet, and when you decide to end the session, the IP-address will be freed up again and can now be assigned to another member of the internet.
+
+Practically, that's exactly what happens, when you restart your router at home. The router will connect you to the service provider, which connects you to the internet. Between those players, you will get a fresh IP-address assigned.
+
+Basically, there are two versions of the internet protocol. Let's have a look at both of them.
+
+## IPv4
+
+Es expected `v4` stands for `version` number `4` of the internet protocol.
+
+And that's how an IPv4 address looks like:
+
+```
+192.0.2.146
+```
+
+What you see here is a 32-bit number. All IPv4-address are 32-bit numbers consisting of four 8-bit numbers.
+
+$$
+8bit + 8bit + 8bit + 8bit = 32bit
+$$
+
+As 8 bit are the same as 1 byte, an IP-address is a four byte number:
+
+$$
+1byte + 1byte + 1byte + 1byte = 4byte
+$$
+
+Since each of those blocks between the periods `.` is an 8-bit number, that number can be pretty much any number between `0` and `255`, including both `0` and `255`. 
+
+$$
+2^{8}=256
+$$
+
+These are 256 different possible values for each of those 4 numbers, starting from `0` all the way up to `255`.
+
+As we now know how many different values are possible for each of those four blocks, we can now calculate how many addresses are possible in IPv4.
+
+$$
+256^{4}=4,294,967,296
+$$
+
+Wow, there are more than 4 billions different address possible using IPv4.
+
+That seems like a massive number at first, and you might think, but well, have a look onto the following quote from [statista.com](https://www.statista.com/statistics/617136/digital-population-worldwide/):
+
+> As of January 2021 there were 4.66 billion active internet users worldwide - 59.5 percent of the global population. Of this total, 92.6 percent (4.32 billion) accessed the internet via mobile devices.
+
+Like you see, we already have more active internet users than there are IPv4 addresses possible. 
+
+And note that this number includes only the humans. In reality each human uses a lot more IP-addresses  than only a single one, think of all your devices, smartphone, tablet, gaming console, TV, all those are consuming an IP-address as well, as they are connected to the internet, too. 
+
+That means the number of IP-address we need for internet is by far higher than the number of persons/companies using the internet, as most of those have multiple devices.
+
+IPv6 fixes that issue, so let's move on to the next generation of the internet protocol — the sixth version: IPv6.
+
+## IPv6
+
+Addresses in IPv6 are no longer 32 bits in size. The number was increased up to 128 bits. These are 96 more bits than in IPv4.
+
+Because of the increment in the size, IPv6 is able to provide enough addresses for all network participants.
+
+Here is how many IPv6 addresses are possible:
+
+$$
+2^{128} = 340,282,370,000,000,000,808,640,304,032,688,192,896
+$$
+
+And here's an example of a IPv6 address:
+
+```
+0000:0000:0000:2135:A201:00FD:DCEF:125A
+```
+
+Note that IPv6 address are hexadecimal numbers, like MAC-addresses are.
+
+## Conclusion
+* The internet protocol is an important core component of the internet. 
+* Due to the fact that we have more network participants than IPv4 addresses, we are smoothly switching to IPv6, which can provide us with more addresses than we need for now.
