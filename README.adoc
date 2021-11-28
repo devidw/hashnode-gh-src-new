@@ -1,18 +1,45 @@
-= Bash Script to automatically create new hashnode `.md article files with frontmatter
+= Bash Script to automatically create new hashnode `.md` article files with frontmatter
 
+You can use the shell script `new` to auto generate boilterplate article `.md` files, when you publish on hashnode from a GitHub source.
+
+== Installation
+. Download the `new` script
+. Make it executable
 [source, bash]
 ----
 chmod +x ./new
 ----
 
+== Configuration
+Configuration is doen by changing variable values inside `new`.
+
+=== Domain
+Specify your hashnode domain (custom domain or hashnode subdomain)
+[source, bash]
+----
+domain="xn--david-9u04d.to"
+----
+
+=== Cover
+Specify a default cover image URL
+[source, bash]
+----
+cover="https://david.wolf.gdn/media/cover.png"
+----
+
 == Usage
-For today
+Simply run the script, this will gnerate a new `.md` file with frontmatter in the directory the script is located.
+
+The file name will be `YYYY-MM-DD_.md`.
+
+NOTE: Spaces are not allowed in hashnode source files, when you are publishing from a GitHub source on Hashnode, use underscores instead.
+
 [source, bash]
 ----
 ./new
 ----
 
-For a given date
+You can optionaly pass a date to the script by passing it as argument:
 [source, bash]
 ----
 ./new 2021-11-28
