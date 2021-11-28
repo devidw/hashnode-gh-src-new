@@ -1,1 +1,6 @@
-= Articles for Hahnode and personal blog
+= Articles for personal blog and Hashnode
+
+[source]
+----
+git submodule add git@github.com:devidw/blog-articles.git ./content/posts
+----
