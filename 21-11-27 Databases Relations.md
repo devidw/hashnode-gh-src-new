@@ -1,11 +1,11 @@
 ---
 title: "1:1, 1:N, N:N ~ Database Relations"
 slug: databases-relations
-lastmod: 2021-11-27
-date: 2021-11-27
 tags: database, databases, relation, relations
 cover: https://david.wolf.gdn/media/cover.png
 domain: xn--david-9u04d.to
+date: 2021-11-27
+lastmod: 2021-11-27
 ---
 
 Entities in databases can have relationships with other entities.
