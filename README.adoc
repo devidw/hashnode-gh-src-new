@@ -30,7 +30,7 @@ cover="https://david.wolf.gdn/media/cover.png"
 == Usage
 Simply run the script, this will gnerate a new `.md` file with frontmatter in the directory the script is located.
 
-The file name will be `YYYY-MM-DD_.md`.
+The file name will follow the format of `YYYY-MM-DD_.md`. For example: `2021-12-31_.md`.
 
 NOTE: Spaces are not allowed in hashnode source files, when you are publishing from a GitHub source on Hashnode, use underscores instead.
 
