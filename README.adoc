@@ -1,6 +1,19 @@
-= Articles for personal blog and Hashnode
+= Bash Script to automaticaly create new hashnode `.md` article files with frontmatter
 
-[source]
+[source, bash]
 ----
-git submodule add git@github.com:devidw/blog-articles.git ./content/posts
+chmod +x ./new
+----
+
+== Usage
+For today
+[source, bash]
+----
+./new
+----
+
+For a given date
+[source, bash]
+----
+./new 2021-11-28
 ----
