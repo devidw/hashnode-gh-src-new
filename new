@@ -1,9 +1,12 @@
 #!/bin/bash
 
+domain="xn--david-9u04d.to"
+cover="https://david.wolf.gdn/media/cover.png"
+
 if [ ! -z "$1" ]; then
     date=$1
 else
-    date=$(date '+%y-%m-%d')
+    date=$(date '+%Y-%m-%d')
 fi
 
 filename="${date}_.md"
@@ -14,8 +17,8 @@ slug:
 tags: 
 lastmod: ${date}
 date: ${date}
-cover: https://david.wolf.gdn/media/cover.png
-domain: xn--david-9u04d.to
+cover: ${cover}
+domain: ${domain}
 ---"
 
 echo "$frontmatter" >"$filename"
