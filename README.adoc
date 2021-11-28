@@ -1,4 +1,4 @@
-= Bash Script to automaticaly create new hashnode `.md` article files with frontmatter
+= Bash Script to automatically create new hashnode `.md article files with frontmatter
 
 [source, bash]
 ----
